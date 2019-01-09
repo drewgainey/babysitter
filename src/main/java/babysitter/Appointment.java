@@ -2,9 +2,9 @@ package babysitter;
 
 public class Appointment {
 
-	private static double startTime; //Eclipse had me add static here not sure why
-	private static double bedTime; //Eclipse had me add static here not sure why
-	private static double endTime; //Eclipse had me add static here not sure why
+	private double startTime; //Eclipse had me add static here not sure why
+	private double bedTime; //Eclipse had me add static here not sure why
+	private double endTime; //Eclipse had me add static here not sure why
 
 
 	public double getStartTime() {
@@ -20,13 +20,13 @@ public class Appointment {
 	}
 
 	public Appointment(double startTime, double bedTime, double endTime) {
-		Appointment.startTime = startTime;
-		Appointment.bedTime = bedTime;
-		Appointment.endTime = endTime;
+		this.startTime = startTime;
+		this.bedTime = bedTime;
+		this.endTime = endTime;
 	}
 	
 	//Eclipse had me add static here not sure why
-	public static double calculatePay() {
+	public double calculatePay() {
 		double timeTillBed = bedTime - startTime;
 		double timeTillMidNight = 24 - bedTime;
 		double timeTillEnd = endTime;

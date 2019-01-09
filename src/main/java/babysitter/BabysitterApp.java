@@ -23,12 +23,12 @@ public class BabysitterApp {
 		System.out.println("What time will you leave?");
 		double endTime = input.nextDouble();
 		
-		Appointment newAppointment = new Appointment(startTime, bedTime, endTime); //unsure about the warning
+		Appointment newAppointment = new Appointment(startTime, bedTime, endTime);
 		
 		Thread.sleep(2000);
 		System.out.println("Your pay will be....");
 		Thread.sleep(2000);
-		System.out.println(Appointment.calculatePay()); //Thought that it should have been newAppointment.calculatePay() instead
+		System.out.println(newAppointment.calculatePay()); 
 		
 
 	}
